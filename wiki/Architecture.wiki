@@ -1,0 +1,16 @@
+#summary This page will explain 8086 architecture.
+#labels Phase-Design,Phase-Implementation,Featured
+
+= Introduction =
+
+[http://i219.photobucket.com/albums/cc244/leonardoaraujo/80186_arch.png]
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
