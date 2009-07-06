@@ -10,7 +10,7 @@ The 8086 is a 16-bit processor divided in three parts (BIU,EU,AU) it has 20-bit 
 
 = Details =
 
-[http://i219.photobucket.com/albums/cc244/leonardoaraujo/8086.gif]
+http://i219.photobucket.com/albums/cc244/leonardoaraujo/Diagrama_Blocos_3.png
 
 8086 main parts
   * BIU(Bus Interface Unit): Sends address asked by AU to the address bus.
