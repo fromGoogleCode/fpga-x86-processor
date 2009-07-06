@@ -39,9 +39,10 @@ Five Offset registers: Used to address a data/code/stack segment
 == Flags Register ==
 
 This special register will be affected by most of arithimetic and logical instructions.
+
 [http://i219.photobucket.com/albums/cc244/leonardoaraujo/flags.gif]
 
-|| Flag || Description ||
+|| *Flag* || *Description* ||
 || Carry CF || this flag is set to 1 when there is an unsigned overflow. For example when you add bytes 255 + 1 (result is not in range 0...255). When there is no overflow this flag is set to 0 ||
 || Zero ZF || set to 1 when result is zero. For none zero result this flag is set to 0. ||
 || Sign SF || set to 1 when result is negative. When result is positive it is set to 0. Actually this flag take the value of the most significant bit. ||
