@@ -5,12 +5,14 @@
 
 [http://i219.photobucket.com/albums/cc244/leonardoaraujo/80186_arch.png]
 
-Add your content here.
+The 8086 is a 16-bit processor divided in three parts (BIU,EU,AU) it has 20-bit address bus capable of addressing 1Mb of memory divided in cells of one byte.
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+[http://i219.photobucket.com/albums/cc244/leonardoaraujo/8086.gif]
+
+8086 Parts
+  * BIU(Bus Interface Unit)
+  * EU(Executing Unit)
+  * AU(Addressing Unit)
