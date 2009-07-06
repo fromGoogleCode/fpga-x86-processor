@@ -3,7 +3,7 @@
 
 = Introduction =
 
-[http://i219.photobucket.com/albums/cc244/leonardoaraujo/Registradores.png]
+[http://i219.photobucket.com/albums/cc244/leonardoaraujo/Registradores_2.png]
 
 The image above list all 14 registers in x86.
 
@@ -35,3 +35,6 @@ Five Offset registers: Used to address a data/code/stack segment
   * SP and BP Offsets relative to stack (SP top of stack, BP reference for stack)
   * SI and DI Used for data addressing and string manipulation
   * Flags Register wich holds bits signaling ALU operations and control flags
+
+== Flags Register ==
+[http://i219.photobucket.com/albums/cc244/leonardoaraujo/flags.gif]
