@@ -1,0 +1,18 @@
+#summary Physical Address generation
+#labels Featured,Phase-Design,Phase-Implementation
+
+= Introduction =
+
+[http://i219.photobucket.com/albums/cc244/leonardoaraujo/PhysicalAddressGeneration.png]
+
+This page explain the mechanism used to access memory
+
+
+= Details =
+
+The 8086 processor access memory in sets of segments. Memory is addressed using a two component address that consist of a 16-bit segment and a 16-bit offset forming a 20-bit address. Each segment is a linear contiguos segment of 64K bytes of processor address space.
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
