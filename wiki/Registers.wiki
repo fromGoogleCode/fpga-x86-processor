@@ -25,6 +25,13 @@ AX
 
 Four Segment registers: Used to address a data/code/stack segment
   * CS Address for begining of code segment. When used with IP, retrieves the address of next instruction.
-  * DS Normally holds some ALU result.
-  * SS Normally holds some ALU result.
-  * ES Normally holds some ALU result.
+  * DS Address for begining of data segment. Used with SI for full data address.
+  * SS Address for begining of stack segment. Used with SP for next stack position to be addressed.
+  * ES Used for some string operations. Used with DI
+
+
+Five Offset registers: Used to address a data/code/stack segment
+  * IP Program Counter , offset for the next instruction to be executed
+  * SP and BP Offsets relative to stack (SP top of stack, BP reference for stack)
+  * SI and DI Used for data addressing and string manipulation
+  * Flags Register wich holds bits signaling ALU operations and control flags
