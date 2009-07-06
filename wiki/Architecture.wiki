@@ -16,3 +16,15 @@ http://i219.photobucket.com/albums/cc244/leonardoaraujo/Diagrama_Blocos_3.png
   * BIU(Bus Interface Unit): Sends address asked by AU to the address bus.
   * EU(Executing Unit): Tell AU where to get instructions or data(fetch) , decode, execute
   * AU(Addressing Unit): Create an full 20-bit address from Segment and Offset
+
+=== Execution ===
+
+Microprocessors normally execute a program by repeatedly cycling through the following steps
+  * Fetch the next instruction from memory
+  * Read an operand, if required by the instruction
+  * Execute the instruction
+  * Write the result, if required by the instruction
+
+In 8086 this operations are performed by two separate processing units the The execution unit (EU) executes instructions; the bus interface unit (BIU) fetches instructions, reads operands and writes results.
+
+[http://i219.photobucket.com/albums/cc244/leonardoaraujo/InstructionStream.gif]
