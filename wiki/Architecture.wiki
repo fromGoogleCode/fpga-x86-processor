@@ -28,3 +28,9 @@ Microprocessors normally execute a program by repeatedly cycling through the fol
 In 8086 this operations are performed by two separate processing units the The execution unit (EU) executes instructions; the bus interface unit (BIU) fetches instructions, reads operands and writes results.
 
 [http://i219.photobucket.com/albums/cc244/leonardoaraujo/InstructionStream.gif]
+
+=== Execution Unit ===
+The EU unit in 8086/8088 are identical. A 16-bit arithmetic/logic unit (ALU) in the EU maintains the CPU status and control flags, and manipulates the general registers and instruction operands. All registers and data paths in the EU are 16 bits wide for fast internal transfers.
+The EU has no connection to the system bus, the "outside world." It obtains instructions from a queue maintained by the BIU. Likewise, when an instruction requires access to memory or to a peripheral device, the EU requests the BIU to obtain or store the data. All addresses manipulated by the EU are 16 bits wide. The BIU, however, performs an address relocation that gives the EU access to the full megabyte of memory space.
+
+[http://www.doc.ic.ac.uk/~ih/teaching/lectures/comparch/fetch/8086.html]
