@@ -8,7 +8,5 @@
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+|| *Symbol* || *Pin No* || *Direction* || *Description* ||
+|| AD15..AD0 || 2-16,39 || I/O || Address Data Bus Time multiplex memory address and Data ||
