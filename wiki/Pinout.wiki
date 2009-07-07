@@ -9,4 +9,6 @@
 = Details =
 
 || *Symbol* || *Pin No* || *Direction* || *Description* ||
-|| AD15..AD0 || 2-16,39 || I/O || Address Data Bus Time multiplex memory address and Data ||
+|| AD15..AD0 || 2-16,39 || I/O || *Address Data Bus:* Time multiplex memory address(T1) and Data(T2,T3,Tw,T4) ||
+|| A19..A16 || 35-38 || O || *Address/STATUS:* During T1 these are the 4 most significant address lines for memory operations during I/O this lines are low ||
+|| BHE/S7 || 34 || O || *BUS High Enable/Status:* Time multiplex memory address(T1) and Data(T2,T3,Tw,T4) ||
