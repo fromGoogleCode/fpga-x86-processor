@@ -88,29 +88,19 @@ This list will describe all 8086 instructions and show the affected flags.
 || ROL d,c  || ucccuusuc|| Rotate Left ||
 || ROR d,c || ucccuusuc|| Rotate Right ||
 || SAHF || ucccuusuc|| Store AH into 8080 Flags  ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
+|| SAR d,c || ucccuusuc|| Shift Arithmetic Right ||
+|| SBB d,s || ucccuusuc|| Subtract with Borrow ||
+|| SCAS || ucccuusuc|| Scan memory at DI compared to AX ||
+|| SEG r || ucccuusuc|| Segment register ||
+|| SHL/SAL d,c || ucccuusuc|| Shift logical/Arithmetic Left ||
+|| SHR d,c || ucccuusuc|| Shift logical Right ||
+|| STC || ucccuusuc|| Set Carry ||
+|| STD || ucccuusuc|| Set Direction ||
+|| STI || ucccuusuc|| Set Interrupt ||
+|| STOS || ucccuusuc|| Store AX into memory at DI ||
+|| SUB d,s || ucccuusuc|| Subtract ||
+|| TEST d,s || ucccuusuc|| AND function to flags ||
+|| WAIT || ucccuusuc|| Wait ||
+|| XCHG r(,d) || ucccuusuc|| Exchange ||
+|| XLAT || ucccuusuc|| Translate byte to AL ||
+|| XOR d,s || ucccuusuc|| Logical Exclusive OR ||
