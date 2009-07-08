@@ -37,24 +37,24 @@ This list will describe all 8086 instructions and show the affected flags.
 || IDIV s|| ucccuusuc|| Divide (signed) in AX(,DX) ||
 || IMUL s || ucccuusuc|| Multiply (signed) in AX(,DX) ||
 || IN d,p || ucccuusuc|| Input ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
+|| INC d || ucccuusuc|| Increment ||
+|| INT || ucccuusuc|| Interrupt ||
+|| INTO || ucccuusuc|| Interrupt on overflow ||
+|| IRET || ucccuusuc|| Interrupt Return ||
+|| JB/JNAE a || ucccuusuc|| Jump on Below/Not Above or Equal ||
+|| JBE/JNA a || ucccuusuc|| Jump on Below or Equal/Not Above ||
+|| JCXZ a || ucccuusuc|| Jump on CX Zero ||
+|| JE/JZ a || ucccuusuc|| Jump on Equal/Zero ||
+|| JL/JNGE a || ucccuusuc|| Jump on Less/Not Greater or Equal ||
+|| JLE/JNG a || ucccuusuc|| Jump on Less or Equal/Not Greater ||
+|| JMP a || ucccuusuc|| Unconditional Jump ||
+|| JNB/JAE a || ucccuusuc|| Jump on Not Below/Above or Equal ||
+|| JNBE/JA a || ucccuusuc||Jump on Not Below or Equal/Above ||
+|| JNE/JNZ a || ucccuusuc|| Jump on Not Equal/Not Zero ||
+|| JNL/JGE a || ucccuusuc|| Jump on Not Less/Greater or Equal ||
+|| JNLE/JG a || ucccuusuc|| Jump on Not Less or Equal/Greater ||
+|| JNO a || ucccuusuc|| Jump on Not Overflow ||
+|| JNP/JPO a || ucccuusuc|| Jump on Not Parity/Parity Odd ||
 || AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
 || AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
 || AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
