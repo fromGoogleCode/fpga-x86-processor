@@ -55,39 +55,39 @@ This list will describe all 8086 instructions and show the affected flags.
 || JNLE/JG a || ucccuusuc|| Jump on Not Less or Equal/Greater ||
 || JNO a || ucccuusuc|| Jump on Not Overflow ||
 || JNP/JPO a || ucccuusuc|| Jump on Not Parity/Parity Odd ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
-|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
+|| JNS a || ucccuusuc|| Jump on Not Sign ||
+|| JO a || ucccuusuc|| Jump on Overflow ||
+|| JP/JPE a || ucccuusuc|| Jump on Parity/Parity Even ||
+|| JS a || ucccuusuc|| Jump on Sign ||
+|| LAHF || ucccuusuc|| Load AH with 8080 Flags ||
+|| LDS r,s || ucccuusuc|| Load pointer to DS ||
+|| LEA r,s || ucccuusuc|| Load EA to register ||
+|| LES r,s || ucccuusuc|| Load pointer to ES ||
+|| LOCK || ucccuusuc|| Bus Lock prefix ||
+|| LODS || ucccuusuc|| Load memory at SI into AX ||
+|| LOOP a || ucccuusuc|| Loop CX times ||
+|| LOOPNZ/LOOPNE a || ucccuusuc|| Loop while Not Zero/Not Equal ||
+|| LOOPZ/LOOPE a || ucccuusuc|| Loop while Zero/Equal ||
+|| MOV d,s || ucccuusuc|| Move ||
+|| MOVS || ucccuusuc|| Move memory at SI to DI ||
+|| MUL s || ucccuusuc|| Multiply (unsigned) in AX(,DX) ||
+|| NEG d || ucccuusuc|| Negate ||
+|| NOP || ucccuusuc|| No Operation (= XCHG AX,AX) ||
+|| NOT d || ucccuusuc|| Logical NOT ||
+|| OR d,s || ucccuusuc|| Logical inclusive OR ||
+|| OUT p,s || ucccuusuc|| Output ||
+|| POP d || ucccuusuc|| Pop ||
+|| POPF || ucccuusuc|| Pop Flags  ||
+|| PUSH s || ucccuusuc|| Push ||
+|| PUSHF || ucccuusuc|| Push Flags ||
+|| RCL d,c || ucccuusuc|| Rotate through Carry Left ||
+|| RCR d,c || ucccuusuc|| Rotate through Carry Right ||
+|| REP/REPNE/REPNZ || ucccuusuc|| Repeat/Repeat Not Equal/Not Zero ||
+|| REPE/REPZ || ucccuusuc|| Repeat Equal/Zero ||
+|| RET (s) || ucccuusuc|| Return from call ||
+|| ROL d,c  || ucccuusuc|| Rotate Left ||
+|| ROR d,c || ucccuusuc|| Rotate Right ||
+|| SAHF || ucccuusuc|| Store AH into 8080 Flags  ||
 || AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
 || AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
 || AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
