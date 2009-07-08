@@ -5,12 +5,14 @@
 
 [http://i219.photobucket.com/albums/cc244/leonardoaraujo/Instructions-1.png]
 
-Add your content here.
-
+The 8086 has 92 instructions.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+This list will describe all 8086 instructions and show the affected flags.
+
+|| *Mnemonic* || *ODITSZAPC* || *Description* ||
+|| AAA || ucccuusuc|| ASCII Adjust for Add in AX ||
+|| AAD || ucccuusuc|| ASCII Adjust for divide in AX ||
+|| AAM || ucccuusuc|| ASCII Adjust for multiply in AX ||
+|| AAS || ucccuusuc|| ASCII Adjust for substract in AX ||
