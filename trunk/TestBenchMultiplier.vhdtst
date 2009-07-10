@@ -31,19 +31,24 @@ signal twocomp : std_logic;
 begin
      -- DUT is Device Under Test
      DUT:generic_multiplier  generic map(WIDTH => 16) port map(
-         multiplicant <= multiplicant,
-         multiplier <= multiplier,
-         product <= product,
-         twocomp <= twocomp
+         multiplicant => multiplicant,
+         multiplier => multiplier,
+         product => product,
+         twocomp => twocomp
      );
 
      STIMULUS0:process
      begin
           -- insert stimulus here
-          --multiplicant <= (others => '0');
-          --multiplier <= (others => '1');
+          multiplicant <= (others => '0');
+          multiplier <= (others => '1');
           twocomp <= '0';
-          wait;
+          wait for 2 ns;
+
+          multiplicant <= "0000000011000100";
+          multiplier <= "0000000011000101";
+          twocomp <= '0';
+          wait for 2 ns;
      end process;
 
 end architecture;
