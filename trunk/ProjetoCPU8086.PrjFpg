@@ -54,6 +54,23 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
+[Document3]
+DocumentPath=alu.vhd
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
+[GeneratedDocument1]
+DocumentPath=ProjectOutputs\Esquema_CPU.VHD
+
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
@@ -173,6 +190,8 @@ OutputName23=VHDL File
 OutputDocumentPath23=
 OutputVariantName23=
 OutputDefault23=0
+Configuration23_Name1=OutputConfigurationParameter1
+Configuration23_Item1=Crossprobe=False|EnableAttributes=True|Record=VHDLView|SingleFile=True
 OutputType24=WireListNetlist
 OutputName24=WireList Netlist
 OutputDocumentPath24=
