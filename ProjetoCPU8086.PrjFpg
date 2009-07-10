@@ -27,7 +27,7 @@ VHDL87=0
 Verilog95=0
 
 [Document1]
-DocumentPath=Esquema_CPU.SchDoc
+DocumentPath=TestBenchMultiplier.vhdtst
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -41,7 +41,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document2]
-DocumentPath=alu.vhd
+DocumentPath=Esquema_CPU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -69,7 +69,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document4]
-DocumentPath=multiplier.vhd
+DocumentPath=alu.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -83,7 +83,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document5]
-DocumentPath=TestBenchMultiplier.vhdtst
+DocumentPath=multiplier.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -98,6 +98,46 @@ ClassGenNCAutoScope=None
 
 [GeneratedDocument1]
 DocumentPath=ProjectOutputs\Esquema_CPU.VHD
+
+[Generic_VHDLSynthesis]
+Tool=Altium Synthesizer
+SettingsModified=False
+Entity=
+Architecture=
+PromptedNewSynthesizer=False
+SchematicNetlister=0
+AdvancedOptionsEnabled=False
+
+[Generic_VHDLSimulationWatches]
+WatchName0=multiplicant
+WatchEnable0=True
+WatchWave0=True
+WatchName1=multiplier
+WatchEnable1=True
+WatchWave1=True
+WatchName2=product
+WatchEnable2=True
+WatchWave2=True
+WatchName3=twocomp
+WatchEnable3=True
+WatchWave3=True
+
+[Generic_VHDLSimulation]
+Tool=DXP Simulator
+NoIEEE=False
+VHDL93=True
+Verilog2001=True
+TopLevelEntity=TestBenchMultiplier
+TopLevelArchitecture=stimulus
+TopLevelUnit=TestBenchMultiplier
+RunToTime=100000000
+SDFInstance=
+SDFFileName=
+SDFOptimization=1
+SettingsModified=False
+TimeStep=100000000
+TimeUnits=ns
+RunToUnits=ns
 
 [OutputGroup1]
 Name=Netlist Outputs
