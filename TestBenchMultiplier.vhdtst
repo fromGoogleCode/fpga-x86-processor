@@ -4,6 +4,9 @@ Library IEEE;
 Use IEEE.std_logic_1164.all;
 Use IEEE.std_logic_textio.all;
 Use STD.textio.all;
+USE ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+USE ieee.numeric_std.ALL;
 
 entity TestBenchMultiplier is
 
@@ -41,12 +44,12 @@ begin
      begin
           -- insert stimulus here
           multiplicant <= (others => '0');
-          multiplier <= (others => '1');
+          multiplier <= (others => '0');
           twocomp <= '0';
           wait for 2 ns;
 
-          multiplicant <= "0000000011000100";
-          multiplier <= "0000000011000101";
+          multiplicant <= conv_std_logic_vector(2, 16);
+          multiplier <= conv_std_logic_vector(8, 16);
           twocomp <= '0';
           wait for 2 ns;
      end process;
