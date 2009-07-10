@@ -58,6 +58,12 @@ begin
           multiplier <= conv_std_logic_vector(8, 16);
           twocomp <= '1';
           wait for 2 ns;
+
+          -- Negative test (signed)
+          multiplicant <= conv_std_logic_vector(-2, 16);
+          multiplier <= conv_std_logic_vector(-8, 16);
+          twocomp <= '1';
+          wait for 2 ns;
      end process;
 
 end architecture;
