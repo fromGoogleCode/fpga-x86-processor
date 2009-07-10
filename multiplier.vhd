@@ -6,7 +6,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
 
-ENTITY multiplier IS
+ENTITY generic_multiplier IS
    -- Default multiplier width
    GENERIC
    (
@@ -19,10 +19,10 @@ ENTITY multiplier IS
       product      : OUT    std_logic_vector (WIDTH+WIDTH-1 DOWNTO 0);  -- result
       twocomp      : IN     std_logic
    );
-END multiplier ;
+END generic_multiplier ;
 
 
-architecture rtl of multiplier is
+architecture rtl of generic_multiplier is
 
 function rectify (r    : in  std_logic_vector (WIDTH-1 downto 0);       -- Rectifier for signed multiplication
                   twoc : in  std_logic)                                 -- Signed/Unsigned
