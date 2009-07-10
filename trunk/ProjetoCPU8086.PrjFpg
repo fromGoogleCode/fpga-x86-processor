@@ -109,27 +109,39 @@ SchematicNetlister=0
 AdvancedOptionsEnabled=False
 
 [Generic_VHDLSimulationWatches]
-WatchName0=multiplicant
+WatchName0=DUT/multiplicant_s
 WatchEnable0=True
 WatchWave0=True
-WatchName1=multiplier
+WatchName1=DUT/multiplier_s
 WatchEnable1=True
 WatchWave1=True
-WatchName2=product
+WatchName2=DUT/product_s
 WatchEnable2=True
 WatchWave2=True
-WatchName3=twocomp
+WatchName3=DUT/sign_s
 WatchEnable3=True
 WatchWave3=True
+WatchName4=multiplicant
+WatchEnable4=True
+WatchWave4=True
+WatchName5=multiplier
+WatchEnable5=True
+WatchWave5=True
+WatchName6=product
+WatchEnable6=True
+WatchWave6=True
+WatchName7=twocomp
+WatchEnable7=True
+WatchWave7=True
 
 [Generic_VHDLSimulation]
-Tool=DXP Simulator
+Tool=ModelSim
 NoIEEE=False
 VHDL93=True
 Verilog2001=True
 TopLevelEntity=TestBenchMultiplier
 TopLevelArchitecture=stimulus
-TopLevelUnit=TestBenchMultiplier
+TopLevelUnit=TestBenchMultiplier.vhdtst
 RunToTime=100000000
 SDFInstance=
 SDFFileName=
