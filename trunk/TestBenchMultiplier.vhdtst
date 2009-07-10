@@ -1,16 +1,24 @@
 -- Testbench for multilier
 
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+Use IEEE.std_logic_textio.all;
+Use STD.textio.all;
+
 entity TestBenchMultiplier is
 
 end TestBenchMultiplier;
 
 architecture stimulus of TestBenchMultiplier is
 
-component multiplier
+component generic_multiplier
+          GENERIC(
+               WIDTH : integer := 16
+          );
           port(
-               multiplicant : IN     std_logic_vector (15 DOWNTO 0);
-               multiplier   : IN     std_logic_vector (15 DOWNTO 0);
-               product      : OUT    std_logic_vector (31 DOWNTO 0);
+               multiplicant : IN     std_logic_vector (WIDTH-1 DOWNTO 0);
+               multiplier   : IN     std_logic_vector (WIDTH-1 DOWNTO 0);
+               product      : OUT    std_logic_vector (WIDTH+WIDTH-1 DOWNTO 0);
                twocomp      : IN     std_logic
           );
 end component;
@@ -22,7 +30,7 @@ signal twocomp : std_logic;
 
 begin
      -- DUT is Device Under Test
-     DUT port map(
+     DUT:generic_multiplier  generic map(WIDTH => 16) port map(
          multiplicant <= multiplicant,
          multiplier <= multiplier,
          product <= product,
@@ -32,8 +40,8 @@ begin
      STIMULUS0:process
      begin
           -- insert stimulus here
-          multiplicant <= (others => '0');
-          multiplier <= (others => '1');
+          --multiplicant <= (others => '0');
+          --multiplier <= (others => '1');
           twocomp <= '0';
           wait;
      end process;
