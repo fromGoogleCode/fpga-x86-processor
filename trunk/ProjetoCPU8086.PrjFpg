@@ -99,6 +99,15 @@ ClassGenNCAutoScope=None
 [GeneratedDocument1]
 DocumentPath=ProjectOutputs\Esquema_CPU.VHD
 
+[Generic_VHDLSynthesis]
+Tool=Altium Synthesizer
+SettingsModified=False
+Entity=
+Architecture=
+PromptedNewSynthesizer=False
+SchematicNetlister=0
+AdvancedOptionsEnabled=False
+
 [Generic_VHDLSimulationWatches]
 WatchName0=DUT/multiplicant_s
 WatchEnable0=True
@@ -124,15 +133,6 @@ WatchWave6=True
 WatchName7=twocomp
 WatchEnable7=True
 WatchWave7=True
-
-[Generic_VHDLSynthesis]
-Tool=Altium Synthesizer
-SettingsModified=False
-Entity=
-Architecture=
-PromptedNewSynthesizer=False
-SchematicNetlister=0
-AdvancedOptionsEnabled=False
 
 [Generic_VHDLSimulation]
 Tool=DXP Simulator
