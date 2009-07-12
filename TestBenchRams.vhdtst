@@ -16,7 +16,9 @@ architecture stimulus of TestBenchRams is
 
 component rams
           GENERIC(
-               WIDTH : integer := 16
+               WIDTH : integer := 16;
+               SIZE          : integer := 16;
+               BITS_ADDRESS  : integer := 4
           );
           Port (
               WR      : in std_logic;
@@ -38,7 +40,7 @@ signal CLK : std_logic;
 
 begin
      -- DUT is Device Under Test
-     DUT:rams  generic map(WIDTH => 16) port map(
+     DUT:rams  generic map(WIDTH => 16, SIZE => 16, BITS_ADDRESS => 4) port map(
          WR => WR,
          CLK => CLK,
          Datain  => Datain,

@@ -11,19 +11,21 @@ Entity Rams is
        -- Default multiplier width
       GENERIC
       (
-         WIDTH : integer := 16
+         WIDTH         : integer := 16;
+         SIZE          : integer := 16;
+         BITS_ADDRESS  : integer := 4
       );
        Port (
               WR      : in std_logic;
               CLK     : in std_logic;
               Datain  : in std_logic_vector(WIDTH-1 downto 0);
               Dataout : out std_logic_vector(WIDTH-1 downto 0);
-              Addr    : in std_logic_vector(3 downto 0)
+              Addr    : in std_logic_vector(BITS_ADDRESS-1 downto 0)
        );
 END Rams;-- Entity Ends
 
 Architecture Behave of Rams is
-    Type Mem is array ( 15 downto 0) of std_logic_vector( WIDTH-1 downto 0);
+    Type Mem is array ( SIZE-1 downto 0) of std_logic_vector( WIDTH-1 downto 0);
     Signal Memory : Mem;
 
 Begin
