@@ -55,34 +55,6 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document3]
-DocumentPath=Esquema_CPU.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-
-[Document4]
-DocumentPath=cpu8086.vhd
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-
-[Document5]
 DocumentPath=rams.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -96,7 +68,7 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
-[Document6]
+[Document4]
 DocumentPath=alu.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -110,7 +82,7 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
-[Document7]
+[Document5]
 DocumentPath=multiplier.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -124,7 +96,21 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
-[Document8]
+[Document6]
+DocumentPath=cpu8086.vhd
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
+[Document7]
 DocumentPath=Documentos\6744665-8086-Datasheet.pdf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -138,7 +124,7 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
-[Document9]
+[Document8]
 DocumentPath=Documentos\16406760-Machine-Architecture-05-CPU-Structure-and-Function.ppt
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -154,15 +140,6 @@ ClassGenNCAutoScope=None
 
 [GeneratedDocument1]
 DocumentPath=ProjectOutputs\Esquema_CPU.VHD
-
-[Generic_VHDLSynthesis]
-Tool=Altium Synthesizer
-SettingsModified=False
-Entity=
-Architecture=
-PromptedNewSynthesizer=False
-SchematicNetlister=0
-AdvancedOptionsEnabled=False
 
 [Generic_VHDLSimulationWatches]
 WatchName0=Addr
@@ -181,14 +158,23 @@ WatchName4=WR
 WatchEnable4=True
 WatchWave4=True
 
+[Generic_VHDLSynthesis]
+Tool=Altium Synthesizer
+SettingsModified=False
+Entity=
+Architecture=
+PromptedNewSynthesizer=False
+SchematicNetlister=0
+AdvancedOptionsEnabled=False
+
 [Generic_VHDLSimulation]
-Tool=DXP Simulator
+Tool=ModelSim
 NoIEEE=False
 VHDL93=True
 Verilog2001=True
 TopLevelEntity=TestBenchRams
 TopLevelArchitecture=stimulus
-TopLevelUnit=TestBenchRams.vhdtst
+TopLevelUnit=TestBenchMultiplier.vhdtst
 RunToTime=100000000
 SDFInstance=
 SDFFileName=
