@@ -41,7 +41,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document2]
-DocumentPath=Esquema_CPU.SchDoc
+DocumentPath=TestBenchRams.vhdtst
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -55,7 +55,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document3]
-DocumentPath=cpu8086.vhd
+DocumentPath=Esquema_CPU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -69,7 +69,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document4]
-DocumentPath=alu.vhd
+DocumentPath=cpu8086.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -83,7 +83,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document5]
-DocumentPath=multiplier.vhd
+DocumentPath=rams.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -97,7 +97,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document6]
-DocumentPath=Documentos\6744665-8086-Datasheet.pdf
+DocumentPath=alu.vhd
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -111,6 +111,34 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
 [Document7]
+DocumentPath=multiplier.vhd
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
+[Document8]
+DocumentPath=Documentos\6744665-8086-Datasheet.pdf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
+[Document9]
 DocumentPath=Documentos\16406760-Machine-Architecture-05-CPU-Structure-and-Function.ppt
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -137,51 +165,43 @@ SchematicNetlister=0
 AdvancedOptionsEnabled=False
 
 [Generic_VHDLSimulationWatches]
-WatchName0=DUT/multiplicant_s
+WatchName0=Addr
 WatchEnable0=True
 WatchWave0=True
-WatchName1=DUT/multiplier_s
+WatchName1=CLK
 WatchEnable1=True
 WatchWave1=True
-WatchName2=DUT/product_s
+WatchName2=Datain
 WatchEnable2=True
 WatchWave2=True
-WatchName3=DUT/sign_s
+WatchName3=Dataout
 WatchEnable3=True
 WatchWave3=True
-WatchName4=multiplicant
+WatchName4=WR
 WatchEnable4=True
 WatchWave4=True
-WatchName5=multiplier
-WatchEnable5=True
-WatchWave5=True
-WatchName6=product
-WatchEnable6=True
-WatchWave6=True
-WatchName7=twocomp
-WatchEnable7=True
-WatchWave7=True
 
 [Generic_VHDLSimulation]
-Tool=ModelSim
+Tool=DXP Simulator
 NoIEEE=False
 VHDL93=True
 Verilog2001=True
-TopLevelEntity=TestBenchMultiplier
+TopLevelEntity=TestBenchRams
 TopLevelArchitecture=stimulus
-TopLevelUnit=TestBenchMultiplier.vhdtst
+TopLevelUnit=TestBenchRams.vhdtst
 RunToTime=100000000
 SDFInstance=
 SDFFileName=
 SDFOptimization=1
 SettingsModified=False
-TimeStep=100000000
+TimeStep=200000000
 TimeUnits=ns
 RunToUnits=ns
 
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -314,6 +334,7 @@ OutputDefault25=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -334,6 +355,7 @@ OutputDefault3=0
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Composite
 OutputName1=Composite Drawing
@@ -393,6 +415,7 @@ PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -409,6 +432,7 @@ OutputDefault2=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -464,6 +488,7 @@ OutputDefault9=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -512,6 +537,7 @@ OutputDefault8=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
+TargetPrinter=HP Color LaserJet 2840 PS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print

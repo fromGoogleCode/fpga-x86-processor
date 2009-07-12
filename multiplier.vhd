@@ -24,9 +24,8 @@ END generic_multiplier ;
 
 architecture rtl of generic_multiplier is
 
-function rectify (r    : in  std_logic_vector (WIDTH-1 downto 0);       -- Rectifier for signed multiplication
-                  twoc : in  std_logic)                                 -- Signed/Unsigned
-  return std_logic_vector is
+-- Define a function for rectifier for signed multiplication
+function rectify (r    : in  std_logic_vector (WIDTH-1 downto 0); twoc : in  std_logic) return std_logic_vector is
   variable rec_v       : std_logic_vector (WIDTH-1 downto 0);
 begin
     if ((r(WIDTH-1) and twoc)='1') then
