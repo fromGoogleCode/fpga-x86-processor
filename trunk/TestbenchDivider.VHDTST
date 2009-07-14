@@ -41,7 +41,7 @@ signal dividend : std_logic_vector(31 downto 0);
 signal divisor : std_logic_vector(15 downto 0);
 signal quotient : std_logic_vector(15 downto 0);
 signal remainder : std_logic_vector(15 downto 0);
-signal clk,reset,twocomp,w,start : std_logic;
+signal clk,reset,twocomp,w,start,overflow,done : std_logic;
 
 
 
@@ -71,21 +71,66 @@ begin
 
      STIMULUS0:process
      begin
-          -- insert stimulus here
+          -- Test division 8 / 2
           reset <= '1';
-          dividend <= conv_std_logic_vector(8, 31);
+          dividend <= conv_std_logic_vector(8, 32);
           divisor <= conv_std_logic_vector(2, 16);
           twocomp <= '0';
           w <= '0';
+          start <= '0';
           wait for period_clk;
 
           reset <= '0';
+          wait for period_clk;
+
           start <= '1';
           wait for period_clk;
 
           start <= '0';
+          wait until rising_edge(done);       -- Wait for done signal
           wait for period_clk;
 
+          -- Test division 8/3
+          dividend <= conv_std_logic_vector(8, 32);
+          divisor <= conv_std_logic_vector(3, 16);
+          start <= '1';
+          wait for period_clk;
+          start <= '0';
+          wait until rising_edge(done);       -- Wait for done signal
+          wait for period_clk;
+
+          -- Test division 2/8
+          dividend <= conv_std_logic_vector(2, 32);
+          divisor <= conv_std_logic_vector(8, 16);
+          start <= '1';
+          wait for period_clk;
+          start <= '0';
+          wait until rising_edge(done);       -- Wait for done signal
+          wait for period_clk;
+
+          -- Test division -8/2
+          dividend <= conv_std_logic_vector(-8, 32);
+          divisor <= conv_std_logic_vector(2, 16);
+          -- Indicate negative number
+          twocomp <= '1';
+          start <= '1';
+          wait for period_clk;
+          start <= '0';
+          twocomp <= '0';
+          wait until rising_edge(done);       -- Wait for done signal
+          wait for period_clk;
+
+          -- Test division (-8)/(-2)
+          dividend <= conv_std_logic_vector(-8, 32);
+          divisor <= conv_std_logic_vector(-2, 16);
+          -- Indicate negative number
+          twocomp <= '1';
+          start <= '1';
+          wait for period_clk;
+          start <= '0';
+          twocomp <= '0';
+          wait until rising_edge(done);       -- Wait for done signal
+          wait for period_clk;
 
      end process;
 
