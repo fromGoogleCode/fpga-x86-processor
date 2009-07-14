@@ -138,6 +138,34 @@ ClassGenCCAutoEnabled=1
 ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 
+[Document9]
+DocumentPath=divider.vhd
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
+[Document10]
+DocumentPath=TestbenchDivider.VHDTST
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+
 [GeneratedDocument1]
 DocumentPath=ProjectOutputs\Esquema_CPU.VHD
 
@@ -172,9 +200,9 @@ Tool=ModelSim
 NoIEEE=False
 VHDL93=True
 Verilog2001=True
-TopLevelEntity=TestBenchRams
+TopLevelEntity=TestBenchDivider
 TopLevelArchitecture=stimulus
-TopLevelUnit=TestBenchRams.vhdtst
+TopLevelUnit=TestbenchDivider.VHDTST
 RunToTime=100000000
 SDFInstance=
 SDFFileName=
