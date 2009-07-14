@@ -1,0 +1,92 @@
+-- Tester for divider module
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+Use IEEE.std_logic_textio.all;
+Use STD.textio.all;
+USE ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+USE ieee.numeric_std.ALL;
+
+entity TestBenchDivider is
+
+end TestBenchDivider;
+
+architecture stimulus of TestBenchDivider is
+
+component divider
+          GENERIC(
+                        WIDTH_DIVID : integer := 32;      -- Width Dividend
+                        WIDTH_DIVIS : integer := 16;      -- Width Divisor
+                        WIDTH_SHORT : Integer := 8        -- Check Overflow against short Byte/Word
+                  );
+   PORT(
+      clk       : IN     std_logic;                                  -- System Clock
+      reset     : IN     std_logic;                                  -- Active high
+      dividend  : IN     std_logic_vector (WIDTH_DIVID-1 DOWNTO 0);
+      divisor   : IN     std_logic_vector (WIDTH_DIVIS-1 DOWNTO 0);
+      quotient  : OUT    std_logic_vector (WIDTH_DIVIS-1 DOWNTO 0);
+      remainder : OUT    std_logic_vector (WIDTH_DIVIS-1 DOWNTO 0);
+      twocomp   : IN     std_logic;
+      w         : IN     std_logic;                                  -- UNUSED!
+      overflow  : OUT    std_logic;
+      start     : IN     std_logic;
+      done      : OUT    std_logic
+   );
+end component;
+
+constant period_clk : time := 10 ns;
+
+signal dividend : std_logic_vector(31 downto 0);
+signal divisor : std_logic_vector(15 downto 0);
+signal quotient : std_logic_vector(15 downto 0);
+signal remainder : std_logic_vector(15 downto 0);
+signal clk,reset,twocomp,w,start : std_logic;
+
+
+
+begin
+     -- DUT is Device Under Test
+     DUT:divider  generic map(WIDTH_DIVID => 32, WIDTH_DIVIS => 16, WIDTH_SHORT => 8) port map(
+         clk => clk,
+         reset => reset,
+         dividend  => dividend,
+         divisor => divisor,
+         quotient => quotient,
+         remainder => remainder,
+         twocomp => twocomp,
+         w => w,
+         overflow => overflow,
+         start => start,
+         done => done
+     );
+
+     CLK_process :process
+      begin
+           CLK <= '0';
+           wait for period_clk / 2;
+           CLK <= '1';
+           wait for period_clk / 2;
+      end process;
+
+     STIMULUS0:process
+     begin
+          -- insert stimulus here
+          reset <= '1';
+          dividend <= conv_std_logic_vector(8, 31);
+          divisor <= conv_std_logic_vector(2, 16);
+          twocomp <= '0';
+          w <= '0';
+          wait for period_clk;
+
+          reset <= '0';
+          start <= '1';
+          wait for period_clk;
+
+          start <= '0';
+          wait for period_clk;
+
+
+     end process;
+
+end architecture;
